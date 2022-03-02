@@ -13,7 +13,7 @@ startButton.addEventListener('click', () => screens[0].classList.add('up'));
 
 const increaseScore = () => {
   score++;
-  if (score > 19) message.classList.add('visible');
+  if (score > 259) message.classList.add('visible');
   scoreElement.innerHTML = `Score: ${score}`;
 };
 

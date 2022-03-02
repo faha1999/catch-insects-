@@ -5,13 +5,14 @@
 }
 
 body {
-  background-color: #516dff;
+  background-color: #e57525;
   color: #fff;
   font-family: 'Press Start 2P', sans-serif;
   height: 100vh;
   overflow: hidden;
   margin: 0;
   text-align: center;
+  font-size: 80%;
 }
 
 a {
@@ -20,23 +21,24 @@ a {
 
 h1 {
   line-height: 1.4;
+  color: #184586;
 }
 
 .btn {
   border: 0;
   background-color: #fff;
-  color: #516dff;
+  color: #184586;
   padding: 15px 20px;
   font-family: inherit;
   cursor: pointer;
-}
 
-.btn:hover {
-  opacity: 0.9;
-}
+  &:hover {
+    opacity: 0.9;
+  }
 
-.btn:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .screen {
@@ -67,7 +69,7 @@ h1 {
 
 .choose-insect-btn {
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #184586;
   color: #fff;
   cursor: pointer;
   font-family: inherit;
@@ -76,8 +78,8 @@ h1 {
 }
 
 .choose-insect-btn:hover {
-  background-color: #fff;
-  color: #516dff;
+  background-color: #184586;
+  color: #fff;
 }
 
 .choose-insect-btn:active {
@@ -98,6 +100,7 @@ h1 {
 .score {
   position: absolute;
   top: 20px;
+  color: #184586;
 }
 
 .time {
