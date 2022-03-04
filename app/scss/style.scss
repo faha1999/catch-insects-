@@ -49,10 +49,10 @@ h1 {
   height: 100vh;
   width: 100vw;
   transition: margin 0.5s ease-out;
-}
 
-.screen.up {
-  margin-top: -100vh;
+  &.up {
+    margin-top: -100vh;
+  }
 }
 
 .insects-list {
@@ -61,10 +61,10 @@ h1 {
   justify-content: center;
   list-style-type: none;
   padding: 0;
-}
 
-.insects-list li {
-  margin: 10px;
+  li {
+    margin: 10px;
+  }
 }
 
 .choose-insect-btn {
@@ -75,25 +75,28 @@ h1 {
   font-family: inherit;
   width: 150px;
   height: 150px;
-}
 
-.choose-insect-btn:hover {
-  background-color: #184586;
-  color: #fff;
-}
+  &:hover {
+    background-color: #184586;
+    color: #fff;
+  }
 
-.choose-insect-btn:active {
-  background-color: rgba(255, 255, 255, 0.7);
-}
+  &:active {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
 
-.choose-insect-btn img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
 }
 
 .game-container {
   position: relative;
+  background-image: url(https://images.unsplash.com/photo-1611072337226-1140ab367200?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=788&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .time,
@@ -123,11 +126,11 @@ h1 {
   top: 0;
   left: 50%;
   transform: translate(-50%, -150%);
-}
 
-.message.visible {
-  transform: translate(-50%, 150%);
-  opacity: 1;
+  &.visible {
+    transform: translate(-50%, 150%);
+    opacity: 1;
+  }
 }
 
 .insect {
@@ -140,13 +143,13 @@ h1 {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
-}
 
-.insect img {
-  width: 100px;
-  height: 100px;
-}
+  img {
+    width: 100px;
+    height: 100px;
+  }
 
-.insect.caught {
-  transform: translate(-50%, -50%) scale(0);
+  &.caught {
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
